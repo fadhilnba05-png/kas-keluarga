@@ -350,6 +350,7 @@
 
 <script>
 // Mengambil elemen-elemen berdasarkan ID
+const API_URL = "https://script.google.com/macros/s/AKfycbxzq7ID1UvP47zUe0dIQcZICu-BxhcYtQMXGTYu5TImqPB8aXoBes0fvsBfuRSpepGzPg/exec";
 const addBtn = document.getElementById('addBtn');
 const transactionModal = document.getElementById('transactionModal');
 const modalContent = document.getElementById('modalContent');
@@ -645,7 +646,7 @@ loadDataFromDatabase();  // 2. Baru tarik data dari Google Sheets
 // --- DATA UTAMA ---
 // --- DATABASE GOOGLE SHEETS ---
 // PENTING: Ganti tulisan di bawah dengan URL panjang yang baru saja Anda dapatkan!
-const API_URL = "https://script.google.com/macros/s/AKfycbxzq7ID1UvP47zUe0dIQcZICu-BxhcYtQMXGTYu5TImqPB8aXoBes0fvsBfuRSpepGzPg/exec"; 
+ 
 
 // Data awal dikosongkan karena sekarang akan otomatis ditarik dari Google Sheets
 let transactions = [];
